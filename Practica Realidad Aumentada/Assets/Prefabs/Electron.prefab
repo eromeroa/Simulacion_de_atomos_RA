@@ -105,4 +105,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   padre: {fileID: 0}
-  velocidad: 10
+  velocidad: 0
