@@ -11,7 +11,7 @@ public class Electron : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocidad = 20.0f;
+        velocidad = 50.0f;
     }
 
     // Update is called once per frame
