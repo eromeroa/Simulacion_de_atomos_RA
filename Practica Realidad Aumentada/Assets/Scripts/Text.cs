@@ -15,7 +15,7 @@ public class Text : MonoBehaviour
     void Start()
     {
         text = textObj.GetComponent<TextMesh>();
-        text.text = "Datos del átomo\nNombre: "+Atom+"\n<color=#ff0000ff>Número de protones: "+nProtons+"</color>\n<color=#ffff00ff>Número de neutrones: "+nNeutrons+"</color>\n<color=#0000a0ff>Número de electrones: "+nElectrons+"</color>\nPeso atómico: "+AtomicW+" u";
+        text.text = "<color=#ffffffff><b>" + Atom+ "</b></color>\n<color=#ff0000ff>Número de protones: " + nProtons+"</color>\n<color=#ffff00ff>Número de neutrones: "+nNeutrons+"</color>\n<color=#0000a0ff>Número de electrones: "+nElectrons+"</color>\nPeso atómico: "+AtomicW+" u";
         textObj.gameObject.SetActive(false);
     }
 

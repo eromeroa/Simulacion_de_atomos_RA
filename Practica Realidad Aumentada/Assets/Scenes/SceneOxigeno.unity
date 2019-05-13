@@ -164,6 +164,90 @@ Transform:
   m_Father: {fileID: 1882345847}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &24096155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 367846237}
+    m_Modifications:
+    - target: {fileID: 8835400627644033755, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoOxigeno
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.06630435
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.06630438
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06630438
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1, type: 3}
 --- !u!4 &67105247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2612327428052849961, guid: a8c7539b8181be94aac19d6c5436cb19,
@@ -200,34 +284,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2005942300}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &250272335
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'oxigenoMaterial
-
-    14242'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c15d2f82094441e38e569dd73a0f9dc3, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!4 &319288344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 637314650897509958, guid: 71df743f0ad24204793cb836856c4249,
@@ -248,6 +304,7 @@ GameObject:
   - component: {fileID: 367846234}
   - component: {fileID: 367846233}
   - component: {fileID: 367846232}
+  - component: {fileID: 367846238}
   m_Layer: 0
   m_Name: Oxigeno
   m_TagString: Untagged
@@ -280,7 +337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 250272335}
+  - {fileID: 888836606}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -358,9 +415,28 @@ Transform:
   - {fileID: 1882345847}
   - {fileID: 1794721248}
   - {fileID: 916125502}
+  - {fileID: 831016670}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &367846238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367846231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc357c116ec5384697e1797483b8241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textObj: {fileID: 831016669}
+  nProtons: 8
+  nNeutrons: 8
+  nElectrons: 8
+  AtomicW: 15.999
+  Atom: "OX\xCDGENO"
 --- !u!1001 &383574223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1121,6 +1197,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8c7539b8181be94aac19d6c5436cb19, type: 3}
+--- !u!1 &831016669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8835400627644033755, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 24096155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &831016670 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8835400627644033756, guid: 3f6cd6acbca2e0041b08122cb3c8f3f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 24096155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!21 &888836606
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'oxigenoMaterial
+
+    50964'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c15d2f82094441e38e569dd73a0f9dc3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!4 &899017949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4557058509653527425, guid: 569d56fffe198214393418aca616a5a7,
