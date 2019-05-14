@@ -1816,11 +1816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab79f8cafa2f495abf86e558e8eabfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tarjeta1: {fileID: 532332146}
-  tarjeta2: {fileID: 591988891}
-  molecula: {fileID: 917431257}
-  atomo1: {fileID: 659684122}
-  atomo2: {fileID: 804105208}
+  tarjeta: {fileID: 591988891}
 --- !u!21 &535979720
 Material:
   serializedVersion: 6
@@ -2862,7 +2858,7 @@ MonoBehaviour:
   m_Script: {fileID: -1826476478, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mWorldCenterMode: 2
+  mWorldCenterMode: 1
   mWorldCenter: {fileID: 0}
 --- !u!81 &1232206957
 AudioListener:

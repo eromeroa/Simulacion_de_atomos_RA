@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class ShowMolecule : MonoBehaviour
 {
-    public GameObject tarjeta1;
-    public GameObject tarjeta2;
-    public GameObject molecula;
-    public GameObject atomo1;
-    public GameObject atomo2;
+    public GameObject tarjeta;
+    private GameObject molecula;
+    private GameObject atomo1;
+    private GameObject atomo2;
 
     // Start is called before the first frame update
     void Start()
     {
+        molecula = transform.GetChild(1).gameObject;
+        atomo1 = transform.GetChild(0).gameObject;
+        atomo2 = tarjeta.transform.GetChild(0).gameObject;
         molecula.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        float dist = Vector3.Distance(tarjeta1.transform.position, tarjeta2.transform.position);
+        float dist = Vector3.Distance(transform.position, tarjeta.transform.position);
 
         if (dist < 20 && !molecula.gameObject.activeInHierarchy)
         {
