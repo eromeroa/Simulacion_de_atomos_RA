@@ -23,14 +23,14 @@ public class ShowMolecule : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, tarjeta.transform.position);
 
-        if (dist < 20 && !molecula.gameObject.activeInHierarchy)
+        if (dist < 13 && !molecula.gameObject.activeInHierarchy)
         {
             atomo1.gameObject.SetActive(false);
             atomo2.gameObject.SetActive(false);
             molecula.gameObject.SetActive(true);
 
         }
-        else if(dist > 20 && molecula.gameObject.activeInHierarchy)
+        else if(dist > 13 && molecula.gameObject.activeInHierarchy)
         {
             atomo1.gameObject.SetActive(true);
             atomo2.gameObject.SetActive(true);
