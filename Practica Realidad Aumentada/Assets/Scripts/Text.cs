@@ -27,10 +27,12 @@ public class Text : MonoBehaviour
     {
         touch = Input.GetTouch(0);
         if((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && !textObj.gameObject.activeInHierarchy) || (atomo.gameObject.activeInHierarchy && touch.phase == TouchPhase.Began && !textObj.gameObject.activeInHierarchy))
+        //if ((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && !textObj.gameObject.activeInHierarchy))
         {
             textObj.gameObject.SetActive(true);
         }
         else if((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && textObj.gameObject.activeInHierarchy) || (atomo.gameObject.activeInHierarchy && touch.phase == TouchPhase.Began && textObj.gameObject.activeInHierarchy))
+        //else if ((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && textObj.gameObject.activeInHierarchy))
         {
             textObj.gameObject.SetActive(false);
         }

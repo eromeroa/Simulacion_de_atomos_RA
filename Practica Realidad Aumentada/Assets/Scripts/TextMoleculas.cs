@@ -26,10 +26,12 @@ public class TextMoleculas : MonoBehaviour
     {
         touch = Input.GetTouch(0);
         if ((molecula.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && !textObj.gameObject.activeInHierarchy) || (molecula.gameObject.activeInHierarchy && touch.phase == TouchPhase.Began && !textObj.gameObject.activeInHierarchy))
+        //if ((molecula.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && !textObj.gameObject.activeInHierarchy))
         {
             textObj.gameObject.SetActive(true);
         }
         else if ((molecula.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && textObj.gameObject.activeInHierarchy) || (molecula.gameObject.activeInHierarchy && touch.phase == TouchPhase.Began && textObj.gameObject.activeInHierarchy))
+        //else if ((molecula.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && textObj.gameObject.activeInHierarchy))
         {
             textObj.gameObject.SetActive(false);
         }
