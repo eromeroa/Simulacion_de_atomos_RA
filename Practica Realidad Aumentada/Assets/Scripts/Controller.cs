@@ -195,31 +195,97 @@ public class Controller : MonoBehaviour
             case 1:
                 hidrogeno = false;
                 tarjH.transform.GetChild(0).gameObject.SetActive(false);
-                tarjH.transform.GetChild(1).gameObject.SetActive(false);
+                if (tarjH.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjH.transform.GetChild(1).gameObject.SetActive(false);
+                    if (!tarjO.transform.GetChild(1).gameObject.activeInHierarchy)
+                    {
+                        tarjO.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                }
+                if (tarjC.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjC.transform.GetChild(1).gameObject.SetActive(false);
+                    if (!tarjO.transform.GetChild(1).gameObject.activeInHierarchy)
+                    {
+                        tarjC.transform.GetChild(0).gameObject.SetActive(true);
+                    }      
+                }
+                if (tarjN.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjN.transform.GetChild(1).gameObject.SetActive(false);
+                    tarjN.transform.GetChild(0).gameObject.SetActive(true);
+                }
                 break;
             case 2:
                 carbono = false;
                 tarjC.transform.GetChild(0).gameObject.SetActive(false);
-                tarjC.transform.GetChild(1).gameObject.SetActive(false);
+                if (tarjC.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjC.transform.GetChild(1).gameObject.SetActive(false);
+                    if (!tarjH.transform.GetChild(1).gameObject.activeInHierarchy && !tarjH.transform.GetChild(1).gameObject.activeInHierarchy)
+                    {
+                        tarjH.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                }
+                if (tarjO.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjO.transform.GetChild(1).gameObject.SetActive(false);
+                    if (!tarjH.transform.GetChild(1).gameObject.activeInHierarchy)
+                    {
+                        tarjO.transform.GetChild(0).gameObject.SetActive(true);
+                    }  
+                }
                 break;
             case 3:
                 nitrogeno = false;
                 tarjN.transform.GetChild(0).gameObject.SetActive(false);
-                tarjN.transform.GetChild(1).gameObject.SetActive(false);
+                if (tarjN.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjN.transform.GetChild(1).gameObject.SetActive(false);
+                    if (!tarjH.transform.GetChild(1).gameObject.activeInHierarchy && !tarjC.transform.GetChild(1).gameObject.activeInHierarchy)
+                    {
+                        tarjH.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                }
                 break;
             case 4:
                 oxigeno = false;
                 tarjO.transform.GetChild(0).gameObject.SetActive(false);
-                tarjO.transform.GetChild(1).gameObject.SetActive(false);
+                if (tarjO.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjO.transform.GetChild(1).gameObject.SetActive(false);
+                    if (!tarjC.transform.GetChild(1).gameObject.activeInHierarchy)
+                    {
+                        tarjC.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                }
+                if (tarjH.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjH.transform.GetChild(1).gameObject.SetActive(false);
+                    if (!tarjN.transform.GetChild(1).gameObject.activeInHierarchy && !tarjC.transform.GetChild(1).gameObject.activeInHierarchy)
+                    {
+                        tarjH.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                }
                 break;
             case 5:
                 sodio = false;
                 tarjNa.transform.GetChild(0).gameObject.SetActive(false);
-                tarjNa.transform.GetChild(1).gameObject.SetActive(false);
+                if (tarjNa.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjNa.transform.GetChild(1).gameObject.SetActive(false);
+                    tarjCl.transform.GetChild(0).gameObject.SetActive(true);
+                }
                 break;
             case 6:
                 cloro = false;
                 tarjCl.transform.GetChild(0).gameObject.SetActive(false);
+                if (tarjNa.transform.GetChild(1).gameObject.activeInHierarchy)
+                {
+                    tarjNa.transform.GetChild(1).gameObject.SetActive(false);
+                    tarjNa.transform.GetChild(0).gameObject.SetActive(true);
+                }
                 break;
         }
     }

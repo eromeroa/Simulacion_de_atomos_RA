@@ -17,7 +17,7 @@ public class Text : MonoBehaviour
     void Start()
     {
         text = textObj.GetComponent<TextMesh>();
-        text.text = "<b><color=#000000ff>" + Atom+ "</color></b>\n<color=#ff0000ff>Número de protones: " + nProtons+"</color>\n<color=#ffff00ff>Número de neutrones: "+nNeutrons+"</color>\n<color=#0000a0ff>Número de electrones: "+nElectrons+"</color>\nPeso atómico: "+AtomicW+" u";
+        text.text = "<b><size=180><color=#000000ff>" + Atom+ "</color></size>\n<color=#ff0000ff>Número de protones: " + nProtons+"</color>\n<color=#ffff00ff>Número de neutrones: "+nNeutrons+"</color>\n<color=#0000a0ff>Número de electrones: "+nElectrons+"</color>\nPeso atómico: "+AtomicW+" u</b>";
         textObj.gameObject.SetActive(false);
         atomo = transform.GetChild(0).gameObject;
     }
@@ -27,12 +27,10 @@ public class Text : MonoBehaviour
     {
         touch = Input.GetTouch(0);
         if((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && !textObj.gameObject.activeInHierarchy) || (atomo.gameObject.activeInHierarchy && touch.phase == TouchPhase.Began && !textObj.gameObject.activeInHierarchy))
-        //if ((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && !textObj.gameObject.activeInHierarchy))
         {
             textObj.gameObject.SetActive(true);
         }
         else if((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && textObj.gameObject.activeInHierarchy) || (atomo.gameObject.activeInHierarchy && touch.phase == TouchPhase.Began && textObj.gameObject.activeInHierarchy))
-        //else if ((atomo.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.I) && textObj.gameObject.activeInHierarchy))
         {
             textObj.gameObject.SetActive(false);
         }
